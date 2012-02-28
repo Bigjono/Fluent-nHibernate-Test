@@ -53,6 +53,7 @@ namespace Fluent.Nhibernate.Tests
             }
 
             var orderReadBack = _session.Query<Order>().Single(x => x.Customer.EmailAddress == "bobsmith@test.com");
+             
 
             Assert.NotEqual(0, orderReadBack.Id);
 
