@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FluentMigrator">
-      <HintPath>..\packages\FluentMigrator.1.0.1.0\lib\40\FluentMigrator.dll</HintPath>
+      <HintPath>..\..\packages\FluentMigrator.1.0.1.0\lib\40\FluentMigrator.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,10 +49,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <Content Include="Migrate.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Migrate.txt" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
